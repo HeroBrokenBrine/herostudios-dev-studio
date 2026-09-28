@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Landing Page Template</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --primary: #d4a574; --dark: #1a1a1a; --pink: #e8b4b8; }
+    body { font-family: 'Segoe UI', sans-serif; background: var(--dark); color: #fff; }
+
+    .hero {
+      height: 100vh; display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+                  url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200') center/cover;
+    }
+    .hero h1 { font-size: 3.2rem; font-weight: 300; letter-spacing: 4px; margin-bottom: 12px; }
+    .hero p { font-size: 1.1rem; color: var(--pink); margin-bottom: 30px; letter-spacing: 1px; }
+    .btn {
+      display: inline-block; background: var(--primary); color: var(--dark);
+      padding: 14px 36px; border-radius: 30px; text-decoration: none;
+      font-size: 1rem; font-weight: 600; border: none; cursor: pointer;
+    }
+
+    section { padding: 80px 40px; max-width: 900px; margin: 0 auto; }
+    h2 { text-align: center; font-size: 1.8rem; font-weight: 300; letter-spacing: 2px; margin-bottom: 40px; }
+
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+    .service-card {
+      background: rgba(255,255,255,0.03); padding: 30px; border-radius: 12px;
+      text-align: center; border: 1px solid rgba(255,255,255,0.05);
+    }
+    .service-card h3 { color: var(--primary); margin-bottom: 8px; }
+    .service-card .price { font-size: 1.3rem; font-weight: 700; margin: 10px 0; }
+    .service-card p { color: #999; font-size: 0.9rem; }
+
+    .gallery {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    }
+    .gallery div {
+      aspect-ratio: 1; background: rgba(255,255,255,0.05);
+      border-radius: 8px; display: flex; align-items: center;
+      justify-content: center; color: #555; font-size: 0.85rem;
+    }
+
+    .book { text-align: center; }
+    .book p { color: #999; margin-bottom: 24px; }
+
+    footer { text-align: center; padding: 30px; color: #555; }
+    @media (max-width: 640px) { .gallery { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div>
+      <h1>YOUR SALON</h1>
+      <p>Beauty & Wellness Studio</p>
+      <a href="#services" class="btn">BOOK NOW</a>
+    </div>
+  </div>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Haircut & Style</h3>
+        <div class="price">$45</div>
+        <p>Includes consultation, wash, cut, and blow dry</p>
+      </div>
+      <div class="service-card">
+        <h3>Color Treatment</h3>
+        <div class="price">$85+</div>
+        <p>Full color, highlights, balayage, or corrective color</p>
+      </div>
+      <div class="service-card">
+        <h3>Nail Service</h3>
+        <div class="price">$35</div>
+        <p>Manicure, pedicure, gel, acrylics, nail art</p>
+      </div>
+      <div class="service-card">
+        <h3>Facial Treatment</h3>
+        <div class="price">$60</div>
+        <p>Deep cleansing, hydration, anti-aging facials</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div>Before/After 1</div>
+      <div>Before/After 2</div>
+      <div>Before/After 3</div>
+      <div>Work 4</div>
+      <div>Work 5</div>
+      <div>Work 6</div>
+    </div>
+  </section>
+
+  <section class="book">
+    <h2>Ready to Transform?</h2>
+    <p>Walk-ins welcome, appointments preferred.</p>
+    <a href="tel:+15551234567" class="btn">Call (555) 123-4567</a>
+  </section>
+
+  <footer>&copy; 2026 Your Salon. All rights reserved.</footer>
+
+</body>
+</html>
