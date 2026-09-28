@@ -1,0 +1,17 @@
+Subject: Hero Studios integration for [SERVER/MODPACK NAME]
+
+Hey [NAME],
+
+I'm from Hero Studios (herostudios.dev). We make performance mods, client tools, and ecosystem integrations for Minecraft.
+
+Our mods (HeroSync, Hero Client, Shorts Veinminer) are designed to work together and are server-safe. We'd love to see them included in [SERVER/MODPACK NAME].
+
+Happy to provide:
+- Custom builds optimized for your server version
+- Direct support for any compatibility issues
+- Co-branding opportunities
+
+Let me know if you're interested.
+
+â€” Hero Studios
+herostudios.dev
