@@ -51,7 +51,7 @@ Let me know if you're interested.
 
 ## 3. Sponsorship / Brand Deal
 
-**Subject:** Sponsorship inquiry â€” Hero Studios Ã— [Brand]
+**Subject:** Sponsorship inquiry â€” Hero Studios Ã-- [Brand]
 
 Hi [Contact Name],
 
@@ -131,3 +131,4 @@ Join our Discord: discord.gg/5N4pAKRrkk
 4. **Discord servers** â€” Minecraft modding communities, Fabric/Forge servers
 5. **Twitter/X** â€” Follow Minecraft mod developers, engage with their posts
 6. **GitHub** â€” Contribute to popular Minecraft projects, build relationships
+
