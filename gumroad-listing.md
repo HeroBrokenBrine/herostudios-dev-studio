@@ -1,56 +1,66 @@
-# Gumroad Product Listing â€” Hero Studios
-
-Use this to sell Hero Studios resource packs / themes on Gumroad.
-Create a free account at gumroad.com, then copy-paste this.
+# Gumroad Listing - Ready to Post
 
 ---
 
-## Product Title
+## Step 1: Create Gumroad Account
 
-Default Green Theme â€” Premium Minecraft GUI Overhaul
+1. Go to https://www.gumroad.com -> Sign Up (free)
+2. Username: herostudios
+3. Set up payout (bank/PayPal) so you can receive money
 
-## Price
+## Step 2: Create Product
 
-$4.99 (or "pay what you want" with $4.99 minimum)
+1. Click Products -> Create Product -> Digital Product
+2. Fill in everything below
 
-## Description
+### Product Name
+Default Green Theme - Premium Minecraft GUI Overhaul
 
-**Default Green Themed (DGN)** is a premium Java Edition GUI overhaul by Hero Studios that makes Minecraft feel like part of the Hero Studios ecosystem â€” in the colour you love.
+### Price
+$4.99 (enable "Pay what you want" with $4.99 minimum)
 
-**What's included:**
+### Description (paste this)
+
+Default Green Themed (DGN) is a premium Java Edition GUI overhaul by Hero Studios that makes Minecraft feel like part of the Hero Studios ecosystem.
+
+WHAT IS INCLUDED:
 - Full HUD re-theme (health, hunger, XP, hotbar)
 - Container re-theme (inventory, chests, crafting, furnaces)
 - Widget re-theme (buttons, sliders, checkboxes, dropdowns)
 - Title screen and panorama overhaul
 - Broad version support: Java 1.8.9 and 1.20.3 through 26.2
 
-**Features:**
+FEATURES:
 - Clean, modern dark design matching herostudios.dev
 - Seamless integration with Hero Client and other Hero Studios mods
 - High-resolution textures with proper mipmapping
-- No performance impact â€” pure resource pack, no code
+- No performance impact - pure resource pack, no code
 - Instant download, no account required
 
-**Compatibility:**
+COMPATIBILITY:
 - Minecraft Java Edition 1.8.9 and 1.20.3+
 - Works with Fabric, Forge, and vanilla
 - Pairs perfectly with Hero Client for the full experience
 
-**Free updates included.**
+Free updates included.
 
-## Tags
-
+### Tags
 minecraft, resource pack, gui overhaul, dark theme, hero studios, java edition, texture pack, menu redesign
 
-## Cover Image
+### Cover Image
+Screenshot of Minecraft GUI with the green theme applied. Show inventory, title screen, and hotbar.
 
-Use a screenshot of the Minecraft GUI with the green theme applied. Show the inventory, title screen, and hotbar.
+### File to Upload
+The resource pack ZIP file from your builds.
 
-## Files to Upload
+### Also Mention
+Hero Studios has 9 other color themes at herostudios.dev/products - each sold separately or as a bundle.
 
-- The resource pack ZIP file
-- A preview image (screenshot of the theme in-game)
+---
 
-## Also Available
+## Step 3: After Publishing
 
-Hero Studios has 9 other color themes available at herostudios.dev/products â€” each sold separately or as a bundle.
+1. Share the Gumroad link on Minecraft subreddits
+2. Add the link to your Fiverr gig description
+3. Post on Discord Minecraft servers
+4. Tweet it tagging Minecraft modding community
