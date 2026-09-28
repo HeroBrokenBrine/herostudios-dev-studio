@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Studios â€” Software & Technology Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="https://herostudios.dev" class="nav__brand">
+        <img src="https://herostudios.dev/favicon.svg" alt="Hero Studios" onerror="this.style.display='none'">
+        Hero Studios
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="#products" class="nav__link">Products</a>
+        <a href="#ecosystem" class="nav__link">Ecosystem</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="https://herostudios.dev/downloads" class="nav__link">Downloads</a>
+        <a href="https://herostudios.dev/docs" class="nav__link">Docs</a>
+        <a href="https://herostudios.dev/contact" class="btn btn--primary btn--sm">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-orb hero-orb--purple"></div>
+    <div class="hero-orb hero-orb--sea"></div>
+    <div class="hero-orb hero-orb--sky"></div>
+    <div class="container">
+      <p class="eyebrow">Independent Software & Technology Studio</p>
+      <h1><span class="grad-text">The Most Advanced Minecraft Tools, and Beyond.</span></h1>
+      <p class="lead">Everything Minecraft. And More. Engineered. One ecosystem of 27 products â€” never a loose collection of mods.</p>
+      <div class="hero__cta">
+        <a href="https://herostudios.dev/downloads" class="btn btn--primary">Download Hero Client</a>
+        <a href="https://herostudios.dev/products" class="btn btn--secondary">Explore the Ecosystem</a>
+        <a href="https://herostudios.dev/docs" class="btn btn--ghost">Read the Docs</a>
+      </div>
+      <div class="hero__meta">
+        <span class="badge badge--stable"><span class="dot"></span> 27 products</span>
+        <span class="badge badge--beta"><span class="dot"></span> 14 stable</span>
+        <span class="badge badge--in-development"><span class="dot"></span> 13 in development</span>
+        <span class="badge badge--alpha"><span class="dot"></span> One ecosystem</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section">
+    <div class="container">
+      <p class="eyebrow">Ecosystem</p>
+      <h2 class="sec-title">One ecosystem. Every tool.</h2>
+      <p class="sec-lead">27 products and growing â€” each with an honest lifecycle status. Stable means CI-built and tested. Roadmap means vision.</p>
+      <br>
+      <div class="grid grid--products" style="margin-top: 40px;">
+
+        <a href="https://herostudios.dev/products/hero-client" class="card card--hover product-card" style="text-decoration:none">
+          <div class="product-card__head">
+            <div class="product-card__glyph" style="--glyph: #8b5cf6">
+              <img src="https://herostudios.dev/product-icons/hero-client.png?v=8" alt="Hero Client" onerror="this.parentElement.innerHTML='HC'">
+            </div>
+            <span class="badge badge--beta"><span class="dot"></span> Beta</span>
+          </div>
+          <div class="product-card__title">Hero Client</div>
+          <div class="product-card__tagline">The most advanced Minecraft client. Performance, and the Hero Studios ecosystem.</div>
+          <div class="product-card__meta">
+            <span class="chip">v2.1</span>
+            <span class="chip">Fabric</span>
+          </div>
+        </a>
+
+        <a href="https://herostudios.dev/products/hero-renderer" class="card card--hover product-card" style="text-decoration:none">
+          <div class="product-card__head">
+            <div class="product-card__glyph" style="--glyph: #38bdf8">
+              <img src="https://herostudios.dev/product-icons/hero-renderer.png?v=8" alt="Hero Renderer" onerror="this.parentElement.innerHTML='HR'">
+            </div>
+            <span class="badge badge--beta"><span class="dot"></span> Beta</span>
+          </div>
+          <div class="product-card__title">Hero Renderer</div>
+          <div class="product-card__tagline">A professional-grade, backend-independent rendering engine for Minecraft.</div>
+          <div class="product-card__meta">
+            <span class="chip">v2.1</span>
+            <span class="chip">Fabric</span>
+          </div>
+        </a>
+
+        <a href="https://herostudios.dev/products/creeper-eater" class="card card--hover product-card" style="text-decoration:none">
+          <div class="product-card__head">
+            <div class="product-card__glyph" style="--glyph: #22c55e">
+              <img src="https://herostudios.dev/product-icons/creeper-eater.png?v=8" alt="Creeper Eater" onerror="this.parentElement.innerHTML='CE'">
+            </div>
+            <span class="badge badge--stable"><span class="dot"></span> Stable</span>
+          </div>
+          <div class="product-card__title">Creeper Eater</div>
+          <div class="product-card__tagline">A survival challenge where creepers hunt and consume the player.</div>
+          <div class="product-card__meta">
+            <span class="chip">v2.1</span>
+            <span class="chip">Fabric</span>
+          </div>
+        </a>
+
+        <a href="https://herostudios.dev/products/hero-play" class="card card--hover product-card" style="text-decoration:none">
+          <div class="product-card__head">
+            <div class="product-card__glyph" style="--glyph: #14b8a6">
+              <img src="https://herostudios.dev/product-icons/hero-play.png?v=8" alt="Hero Play" onerror="this.parentElement.innerHTML='HP'">
+            </div>
+            <span class="badge badge--beta"><span class="dot"></span> Beta</span>
+          </div>
+          <div class="product-card__title">Hero Play</div>
+          <div class="product-card__tagline">Play in the browser. Nothing to install.</div>
+          <div class="product-card__meta">
+            <span class="chip">v0.9.0</span>
+            <span class="chip">WebGL2</span>
+          </div>
+        </a>
+
+        <a href="https://herostudios.dev/products/redstone-debugger" class="card card--hover product-card" style="text-decoration:none">
+          <div class="product-card__head">
+            <div class="product-card__glyph" style="--glyph: #f59e0b">
+              <img src="https://herostudios.dev/product-icons/redstone-debugger.png?v=8" alt="Redstone Debugger" onerror="this.parentElement.innerHTML='RD'">
+            </div>
+            <span class="badge badge--beta"><span class="dot"></span> Beta</span>
+          </div>
+          <div class="product-card__title">Redstone Debugger</div>
+          <div class="product-card__tagline">Record, visualize, and analyze redstone circuits with professional tooling.</div>
+          <div class="product-card__meta">
+            <span class="chip">v1.0.0</span>
+            <span class="chip">Fabric</span>
+          </div>
+        </a>
+
+        <a href="https://herostudios.dev/products/craftpilot" class="card card--hover product-card" style="text-decoration:none">
+          <div class="product-card__head">
+            <div class="product-card__glyph" style="--glyph: #a78bfa">
+              <img src="https://herostudios.dev/product-icons/craftpilot.png?v=8" alt="CraftPilot" onerror="this.parentElement.innerHTML='CP'">
+            </div>
+            <span class="badge badge--alpha"><span class="dot"></span> Alpha</span>
+          </div>
+          <div class="product-card__title">CraftPilot</div>
+          <div class="product-card__tagline">The most advanced companion platform for the most advanced Minecraft tools ever made.</div>
+          <div class="product-card__meta">
+            <span class="chip">v1.0.0</span>
+            <span class="chip">Web platform</span>
+          </div>
+        </a>
+
+        <a href="https://herostudios.dev/products/hero-os" class="card card--hover product-card" style="text-decoration:none">
+          <div class="product-card__head">
+            <div class="product-card__glyph" style="--glyph: #ef4444">
+              <img src="https://herostudios.dev/product-icons/hero-os.png?v=8" alt="HeroOS" onerror="this.parentElement.innerHTML='OS'">
+            </div>
+            <span class="badge badge--in-development"><span class="dot"></span> In Development</span>
+          </div>
+          <div class="product-card__title">HeroOS</div>
+          <div class="product-card__tagline">A from-scratch operating system built as a genuine alternative to Windows.</div>
+          <div class="product-card__meta">
+            <span class="chip">Rust</span>
+            <span class="chip">x86_64</span>
+          </div>
+        </a>
+
+        <a href="https://herostudios.dev/products/herosync" class="card card--hover product-card" style="text-decoration:none">
+          <div class="product-card__head">
+            <div class="product-card__glyph" style="--glyph: #2dd4bf">
+              <img src="https://herostudios.dev/product-icons/herosync.png?v=8" alt="HeroSync" onerror="this.parentElement.innerHTML='HS'">
+            </div>
+            <span class="badge badge--stable"><span class="dot"></span> Stable</span>
+          </div>
+          <div class="product-card__title">HeroSync</div>
+          <div class="product-card__tagline">Latency compensation that makes high-ping gameplay feel local.</div>
+          <div class="product-card__meta">
+            <span class="chip">v1.4.0</span>
+            <span class="chip">Fabric</span>
+          </div>
+        </a>
+
+      </div>
+      <div style="text-align:center; margin-top: 40px;">
+        <a href="https://herostudios.dev/products" class="link-arrow">All 27 products <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM -->
+  <section id="ecosystem" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <p class="eyebrow">Why it works</p>
+      <h2 class="sec-title">Built to work together</h2>
+      <p class="sec-lead">One design language, one performance bar, one shared intelligence layer in the making. Every product integrates with the others.</p>
+      <div class="grid grid--3" style="margin-top: 48px;">
+        <div class="card">
+          <div class="feature">
+            <div class="feature__icon" style="--glyph: #8b5cf6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div>
+              <h3>Performance first</h3>
+              <p>Every tool is engineered around speed and frame budget.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="feature">
+            <div class="feature__icon" style="--glyph: #22c55e">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <div>
+              <h3>Stability before features</h3>
+              <p>Stable means CI-built and tested â€” never the other way around.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="feature">
+            <div class="feature__icon" style="--glyph: #38bdf8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4Z"/></svg>
+            </div>
+            <div>
+              <h3>Quality over quantity</h3>
+              <p>Fewer, deeper, better products. Every one sets a new standard.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="feature">
+            <div class="feature__icon" style="--glyph: #14b8a6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <div>
+              <h3>One ecosystem</h3>
+              <p>Every product is designed to integrate with the others.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="feature">
+            <div class="feature__icon" style="--glyph: #a78bfa">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3>Long-term maintainability</h3>
+              <p>Decisions today serve the next decade.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="feature">
+            <div class="feature__icon" style="--glyph: #f59e0b">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <div>
+              <h3>Vanilla-friendly</h3>
+              <p>Tools that respect the game they extend.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section">
+    <div class="container">
+      <div class="stat-row">
+        <div class="stat"><div class="num">27</div><div class="lbl">Products launched</div></div>
+        <div class="stat"><div class="num">26</div><div class="lbl">Shipped or in dev</div></div>
+        <div class="stat"><div class="num">24</div><div class="lbl">MC versions supported</div></div>
+        <div class="stat"><div class="num">40K+</div><div class="lbl">Lines of code (mods)</div></div>
+        <div class="stat"><div class="num">3</div><div class="lbl">Core languages</div></div>
+        <div class="stat"><div class="num">1</div><div class="lbl">Ecosystem</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Built to work together.</h2>
+        <p>Join the ecosystem. Download your first Hero Studios product, read the docs, and watch one ecosystem become many tools.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://herostudios.dev/downloads" class="btn btn--primary">Get Started</a>
+          <a href="https://herostudios.dev/about" class="btn btn--ghost">About Hero Studios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <img src="https://herostudios.dev/favicon.svg" alt="Hero Studios" onerror="this.style.display='none'">
+            <span>Hero Studios</span>
+          </div>
+          <p class="footer__about">An independent software and technology studio specializing in Minecraft software, developer tools, and platforms. One ecosystem, 27 products, and a long-term vision.</p>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="https://herostudios.dev/products?category=client">Clients</a></li>
+            <li><a href="https://herostudios.dev/products?category=performance">Performance</a></li>
+            <li><a href="https://herostudios.dev/products?category=creation">Creation Tools</a></li>
+            <li><a href="https://herostudios.dev/products?category=developer">Developer Tools</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://herostudios.dev/downloads">Downloads</a></li>
+            <li><a href="https://herostudios.dev/docs">Documentation</a></li>
+            <li><a href="https://herostudios.dev/releases">Release Notes</a></li>
+            <li><a href="https://herostudios.dev/roadmap">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="https://herostudios.dev/about">About</a></li>
+            <li><a href="https://herostudios.dev/contact">Contact</a></li>
+            <li><a href="https://herostudios.dev/license">License</a></li>
+            <li><a href="https://herostudios.dev/support-portal">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Community</h4>
+          <ul>
+            <li><a href="https://discord.gg/5N4pAKRrkk">Discord</a></li>
+            <li><a href="https://github.com/HeroBrokenBrine">GitHub</a></li>
+            <li><a href="https://www.donationalerts.com/r/xhbb_">Support Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Hero Studios. Independent software & technology studio.</span>
+        <span>herostudios.dev</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Mobile nav toggle
+    document.querySelector('.nav__toggle')?.addEventListener('click', () => {
+      document.getElementById('navLinks')?.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
