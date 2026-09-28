@@ -1,0 +1,17 @@
+Hey [NAME], hope things are going well with [PROJECT]!
+
+Since we last connected, Hero Studios has shipped a few new products that might interest your community:
+
+â€¢ Hero Client v2.1 â€” The most advanced Minecraft client
+  (performance, ecosystem integration, Fabric)
+
+â€¢ Redstone Debugger v1.0 â€” Record, visualize, and analyze redstone circuits
+  (great for technical Minecraft content)
+
+â€¢ Hero Play v0.9 â€” Play Minecraft in the browser
+  (no install required, works on any device)
+
+Want to feature any of these, or collaborate on something new?
+
+â€” Hero Studios
+herostudios.dev
