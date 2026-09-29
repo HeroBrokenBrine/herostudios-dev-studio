@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hero Studios - Portfolio Lookbook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @page { size: A4; margin: 0; }
+    body { font-family: 'Inter', sans-serif; color: #f8fafc; background: #050816; }
+    .page { width: 210mm; min-height: 297mm; padding: 40px 48px; position: relative; overflow: hidden; page-break-after: always; }
+    .page::before { content: ""; position: absolute; inset: 0; z-index: 0;
+      background: radial-gradient(800px 400px at 80% -5%, rgba(56, 189, 248, 0.08), transparent 60%),
+        radial-gradient(600px 500px at -5% 10%, rgba(139, 92, 246, 0.1), transparent 55%),
+        radial-gradient(500px 400px at 50% 110%, rgba(20, 184, 166, 0.06), transparent 60%); }
+    .page > * { position: relative; z-index: 1; }
+
+    .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #a78bfa; margin-bottom: 8px; }
+    h1 { font-family: 'Sora', sans-serif; font-size: 36px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 12px; }
+    h2 { font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 10px; }
+    h3 { font-family: 'Sora', sans-serif; font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    p { font-size: 13px; line-height: 1.6; color: #cbd5e1; }
+    .grad { background: linear-gradient(100deg, #c4b5fd 0%, #8b5cf6 50%, #38bdf8 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .badge { display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border-radius: 20px; border: 1px solid; }
+    .badge-green { color: #22c55e; border-color: rgba(34, 197, 94, 0.4); background: rgba(34, 197, 94, 0.08); }
+    .badge-blue { color: #7dd3fc; border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.08); }
+    .badge-purple { color: #a78bfa; border-color: rgba(139, 92, 246, 0.4); background: rgba(139, 92, 246, 0.08); }
+    .divider { height: 1px; background: #334155; margin: 16px 0; }
+    .card { background: linear-gradient(180deg, rgba(30, 41, 59, 0.85), rgba(17, 24, 39, 0.9)); border: 1px solid #334155; border-radius: 12px; padding: 20px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+    .stat { text-align: center; }
+    .stat .num { font-family: 'Sora', sans-serif; font-size: 32px; font-weight: 700; }
+    .stat .lbl { font-size: 11px; color: #94a3b8; margin-top: 2px; }
+    .product { display: flex; align-items: center; gap: 14px; padding: 12px; border: 1px solid #334155; border-radius: 10px; background: rgba(17, 24, 39, 0.6); }
+    .product-icon { width: 42px; height: 42px; border-radius: 10px; display: grid; place-items: center; font-size: 14px; font-weight: 700; color: white; flex-shrink: 0; }
+    .product-info h4 { font-size: 13px; font-weight: 600; }
+    .product-info p { font-size: 11px; color: #94a3b8; }
+    .footer-note { position: absolute; bottom: 30px; left: 48px; right: 48px; display: flex; justify-content: space-between; font-size: 10px; color: #64748b; border-top: 1px solid #334155; padding-top: 12px; }
+    .tech-tag { display: inline-block; font-size: 10px; padding: 2px 8px; border-radius: 6px; background: rgba(15, 23, 42, 0.8); border: 1px solid #334155; color: #94a3b8; margin: 2px; }
+    ul { list-style: none; padding: 0; }
+    ul li { font-size: 12px; color: #cbd5e1; padding: 4px 0; padding-left: 16px; position: relative; }
+    ul li::before { content: ">"; position: absolute; left: 0; color: #a78bfa; font-weight: 700; font-family: monospace; }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: Cover + Overview -->
+  <div class="page">
+    <div style="margin-top: 60px;">
+      <p class="eyebrow">Independent Software & Technology Studio</p>
+      <h1><span class="grad">Hero Studios</span></h1>
+      <h1 style="font-size: 28px; color: #94a3b8; font-weight: 400; margin-top: -4px;">Portfolio Lookbook</h1>
+      <p style="margin-top: 16px; max-width: 420px;">The most advanced Minecraft tools, and beyond. One ecosystem of 27 products -- performance-first, documented, tested.</p>
+    </div>
+
+    <div class="divider" style="margin: 28px 0;"></div>
+
+    <div class="grid-3">
+      <div class="stat"><div class="num grad">27</div><div class="lbl">Products Shipped</div></div>
+      <div class="stat"><div class="num grad">40K+</div><div class="lbl">Lines of Code</div></div>
+      <div class="stat"><div class="num grad">24</div><div class="lbl">MC Versions</div></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Core Technologies</h2>
+    <div style="margin-top: 8px;">
+      <span class="tech-tag">Java 21</span>
+      <span class="tech-tag">Fabric</span>
+      <span class="tech-tag">Kotlin</span>
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">FastAPI</span>
+      <span class="tech-tag">TypeScript</span>
+      <span class="tech-tag">React</span>
+      <span class="tech-tag">Node.js</span>
+      <span class="tech-tag">Astro</span>
+      <span class="tech-tag">Rust</span>
+      <span class="tech-tag">SQLite</span>
+      <span class="tech-tag">PostgreSQL</span>
+      <span class="tech-tag">Gradle</span>
+      <span class="tech-tag">pnpm</span>
+      <span class="tech-tag">Vite</span>
+      <span class="tech-tag">GitHub Actions</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>What I Build</h2>
+    <div class="grid-2" style="margin-top: 10px;">
+      <div class="card">
+        <h3>Minecraft Mods & Plugins</h3>
+        <p>Fabric mods, Forge mods, Spigot plugins. Performance mods, gameplay mods, client tools, server utilities. Cross-version, tested, documented.</p>
+        <div style="margin-top: 8px;"><span class="badge badge-green">Stable</span> <span class="badge badge-blue">Beta</span> <span class="badge badge-purple">In Dev</span></div>
+      </div>
+      <div class="card">
+        <h3>Web Apps & Platforms</h3>
+        <p>Full-stack web applications, documentation platforms, companion tools. Modern stack, fast load, responsive design.</p>
+        <div style="margin-top: 8px;"><span class="tech-tag">Astro</span> <span class="tech-tag">React</span> <span class="tech-tag">TypeScript</span></div>
+      </div>
+      <div class="card">
+        <h3>Resource Packs & Themes</h3>
+        <p>Premium GUI overhauls for Minecraft Java Edition. 10 color themes, broad version support, zero performance impact.</p>
+        <div style="margin-top: 8px;"><span class="tech-tag">Minecraft</span> <span class="tech-tag">1.8.9 - 26.2</span></div>
+      </div>
+      <div class="card">
+        <h3>Systems & Tooling</h3>
+        <p>Build pipelines, CLI tools, automation, APIs. OS development (Rust), rendering engines, latency compensation systems.</p>
+        <div style="margin-top: 8px;"><span class="tech-tag">Rust</span> <span class="tech-tag">Python</span> <span class="tech-tag">CI/CD</span></div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <span>Hero Studios -- herostudios.dev</span>
+      <span>Page 1 of 2</span>
+    </div>
+  </div>
+
+  <!-- PAGE 2: Products + Contact -->
+  <div class="page">
+    <p class="eyebrow">Featured Products</p>
+    <h2>Shipped & In Development</h2>
+    <p style="margin-bottom: 16px;">Each product follows the same standards: CI-built, tested, documented, designed to integrate.</p>
+
+    <div style="display: grid; gap: 8px;">
+      <div class="product">
+        <div class="product-icon" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">HC</div>
+        <div class="product-info"><h4>Hero Client</h4><p>The most advanced Minecraft client. Performance and ecosystem integration.</p></div>
+        <span class="badge badge-blue" style="margin-left: auto;">Beta</span>
+      </div>
+      <div class="product">
+        <div class="product-icon" style="background: linear-gradient(135deg, #38bdf8, #0284c7);">HR</div>
+        <div class="product-info"><h4>Hero Renderer</h4><p>Professional-grade, backend-independent rendering engine for Minecraft.</p></div>
+        <span class="badge badge-blue" style="margin-left: auto;">Beta</span>
+      </div>
+      <div class="product">
+        <div class="product-icon" style="background: linear-gradient(135deg, #22c55e, #15803d);">CE</div>
+        <div class="product-info"><h4>Creeper Eater</h4><p>Survival challenge mod where creepers hunt and consume the player.</p></div>
+        <span class="badge badge-green" style="margin-left: auto;">Stable</span>
+      </div>
+      <div class="product">
+        <div class="product-icon" style="background: linear-gradient(135deg, #14b8a6, #0d9488);">HP</div>
+        <div class="product-info"><h4>Hero Play</h4><p>Play Minecraft in the browser. Nothing to install. WebGL2.</p></div>
+        <span class="badge badge-blue" style="margin-left: auto;">Beta</span>
+      </div>
+      <div class="product">
+        <div class="product-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">RD</div>
+        <div class="product-info"><h4>Redstone Debugger</h4><p>Record, visualize, and analyze redstone circuits with professional tooling.</p></div>
+        <span class="badge badge-blue" style="margin-left: auto;">Beta</span>
+      </div>
+      <div class="product">
+        <div class="product-icon" style="background: linear-gradient(135deg, #a78bfa, #7c3aed);">CP</div>
+        <div class="product-info"><h4>CraftPilot</h4><p>The most advanced companion platform for the most advanced Minecraft tools.</p></div>
+        <span class="badge badge-purple" style="margin-left: auto;">Alpha</span>
+      </div>
+      <div class="product">
+        <div class="product-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">OS</div>
+        <div class="product-info"><h4>HeroOS</h4><p>A from-scratch operating system built as a genuine alternative to Windows.</p></div>
+        <span class="badge badge-purple" style="margin-left: auto;">In Dev</span>
+      </div>
+      <div class="product">
+        <div class="product-icon" style="background: linear-gradient(135deg, #2dd4bf, #14b8a6);">HS</div>
+        <div class="product-info"><h4>HeroSync</h4><p>Latency compensation that makes high-ping gameplay feel local.</p></div>
+        <span class="badge badge-green" style="margin-left: auto;">Stable</span>
+      </div>
+      <div class="product">
+        <div class="product-icon" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">PM</div>
+        <div class="product-info"><h4>Pack Merger</h4><p>Intelligently merge multiple resource packs into one optimised pack.</p></div>
+        <span class="badge badge-green" style="margin-left: auto;">Stable</span>
+      </div>
+    </div>
+
+    <div class="divider" style="margin: 20px 0;"></div>
+
+    <div class="grid-2">
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li>herostudios.dev</li>
+          <li>discord.gg/5N4pAKRrkk</li>
+          <li>github.com/HeroBrokenBrine</li>
+          <li>donationalerts.com/r/xhbb_</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Services Available</h2>
+        <ul>
+          <li>Custom Minecraft mod development</li>
+          <li>Plugin and server tool creation</li>
+          <li>Resource pack and theme design</li>
+          <li>Web app and platform development</li>
+          <li>Build pipeline and CI/CD setup</li>
+          <li>Performance optimization consulting</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <span>Hero Studios -- herostudios.dev -- exhbbunderscore on Fiverr</span>
+      <span>Page 2 of 2</span>
+    </div>
+  </div>
+
+</body>
+</html>
