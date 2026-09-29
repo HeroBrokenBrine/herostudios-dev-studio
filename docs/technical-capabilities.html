@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hero Studios - Technical Capabilities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @page { size: A4; margin: 0; }
+    body { font-family: 'Inter', sans-serif; color: #f8fafc; background: #050816; }
+    .page { width: 210mm; min-height: 297mm; padding: 40px 48px; position: relative; overflow: hidden; page-break-after: always; }
+    .page::before { content: ""; position: absolute; inset: 0; z-index: 0;
+      background: radial-gradient(800px 400px at 80% -5%, rgba(56, 189, 248, 0.08), transparent 60%),
+        radial-gradient(600px 500px at -5% 10%, rgba(139, 92, 246, 0.1), transparent 55%); }
+    .page > * { position: relative; z-index: 1; }
+    .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #a78bfa; margin-bottom: 8px; }
+    h1 { font-family: 'Sora', sans-serif; font-size: 32px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 12px; }
+    h2 { font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+    h3 { font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    p { font-size: 12px; line-height: 1.6; color: #cbd5e1; }
+    .grad { background: linear-gradient(100deg, #c4b5fd 0%, #8b5cf6 50%, #38bdf8 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .divider { height: 1px; background: #334155; margin: 14px 0; }
+    .card { background: linear-gradient(180deg, rgba(30, 41, 59, 0.85), rgba(17, 24, 39, 0.9)); border: 1px solid #334155; border-radius: 10px; padding: 16px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+    .code-block { background: #0b1120; border: 1px solid #334155; border-radius: 8px; padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.6; color: #94a3b8; overflow: hidden; }
+    .code-block .keyword { color: #c084fc; }
+    .code-block .string { color: #86efac; }
+    .code-block .comment { color: #475569; }
+    .code-block .func { color: #38bdf8; }
+    .tech-tag { display: inline-block; font-size: 10px; padding: 2px 8px; border-radius: 6px; background: rgba(15, 23, 42, 0.8); border: 1px solid #334155; color: #94a3b8; margin: 2px; }
+    .timeline { border-left: 2px solid #334155; padding-left: 16px; margin-left: 8px; }
+    .tl-item { position: relative; margin-bottom: 14px; }
+    .tl-item::before { content: ""; position: absolute; left: -21px; top: 4px; width: 10px; height: 10px; border-radius: 50%; background: #8b5cf6; border: 2px solid #050816; }
+    .tl-item.done::before { background: #22c55e; }
+    .tl-item.now::before { background: #14b8a6; box-shadow: 0 0 8px rgba(20, 184, 166, 0.5); }
+    .tl-year { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #64748b; }
+    .feature-row { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px; }
+    .feature-dot { width: 6px; height: 6px; border-radius: 50%; background: #8b5cf6; margin-top: 5px; flex-shrink: 0; }
+    .footer-note { position: absolute; bottom: 30px; left: 48px; right: 48px; display: flex; justify-content: space-between; font-size: 10px; color: #64748b; border-top: 1px solid #334155; padding-top: 12px; }
+    ul { list-style: none; padding: 0; }
+    ul li { font-size: 11px; color: #cbd5e1; padding: 3px 0 3px 14px; position: relative; }
+    ul li::before { content: ">"; position: absolute; left: 0; color: #a78bfa; font-weight: 700; font-family: monospace; }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: Architecture & Code -->
+  <div class="page">
+    <p class="eyebrow">Technical Documentation</p>
+    <h1><span class="grad">Engineering Standards</span></h1>
+    <p style="max-width: 440px;">How Hero Studios builds software. Architecture, code quality, and engineering principles across 27 products.</p>
+
+    <div class="divider"></div>
+
+    <h2>Architecture Philosophy</h2>
+    <div class="grid-2" style="margin-top: 8px;">
+      <div class="card">
+        <h3>One Ecosystem</h3>
+        <p>Shared standards, shared build tooling, single design language. A new product inherits the whole system -- never a redesign.</p>
+      </div>
+      <div class="card">
+        <h3>Modular by Default</h3>
+        <p>Every product is split into API, implementation, and compatibility layers. Modules can be swapped, tested, and versioned independently.</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Code Quality Standards</h2>
+    <div class="grid-2" style="margin-top: 8px;">
+      <div class="card">
+        <h3>Production-Grade Code</h3>
+        <ul>
+          <li>Documented public APIs</li>
+          <li>Backwards compatibility</li>
+          <li>Minimized technical debt</li>
+          <li>Architectural decision records</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Testing & CI</h3>
+        <ul>
+          <li>GitHub Actions CI pipeline</li>
+          <li>Cross-version build matrix</li>
+          <li>Automated testing</li>
+          <li>Truthful status labels</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Example: Fabric Mod Structure</h2>
+    <div class="code-block" style="margin-top: 8px;">
+      <span class="comment">// Hero Studios -- modular Fabric mod architecture</span><br>
+      <span class="keyword">public class</span> <span class="func">HeroClient</span> <span class="keyword">implements</span> ClientModInitializer {<br>
+      &nbsp;&nbsp;<span class="keyword">public static final</span> String MOD_ID = <span class="string">"hero-client"</span>;<br>
+      &nbsp;&nbsp;<span class="keyword">public static final</span> Logger LOG = LoggerFactory.getLogger(MOD_ID);<br><br>
+      &nbsp;&nbsp;<span class="keyword">@Override</span><br>
+      &nbsp;&nbsp;<span class="keyword">public void</span> <span class="func">onInitializeClient</span>() {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;LOG.info(<span class="string">"Loading {} v{}"</span>, MOD_ID, BuildConfig.VERSION);<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;ConfigManager.load();<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;EventManager.register(<span class="keyword">new</span> PerformanceModule());<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;EventManager.register(<span class="keyword">new</span> EcosystemBridge());<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;EventManager.register(<span class="keyword">new</span> UIScheduler());<br>
+      &nbsp;&nbsp;}<br>
+      }
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Version Support Matrix</h2>
+    <div style="margin-top: 8px; font-family: 'JetBrains Mono', monospace; font-size: 10px;">
+      <div class="grid-3">
+        <div class="card" style="padding: 10px;">
+          <h3 style="font-size: 11px;">Fabric Mods</h3>
+          <p style="font-size: 10px;">1.20.3 through 26.2</p>
+          <p style="font-size: 10px; color: #22c55e;">8 stable, 4 beta</p>
+        </div>
+        <div class="card" style="padding: 10px;">
+          <h3 style="font-size: 11px;">Resource Packs</h3>
+          <p style="font-size: 10px;">1.8.9 and 1.20.3+</p>
+          <p style="font-size: 10px; color: #22c55e;">10 themes stable</p>
+        </div>
+        <div class="card" style="padding: 10px;">
+          <h3 style="font-size: 11px;">Web Platform</h3>
+          <p style="font-size: 10px;">Modern browsers</p>
+          <p style="font-size: 10px; color: #7dd3fc;">2 products beta</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <span>Hero Studios -- herostudios.dev</span>
+      <span>Page 1 of 2</span>
+    </div>
+  </div>
+
+  <!-- PAGE 2: Timeline + Principles -->
+  <div class="page">
+    <p class="eyebrow">Engineering Journey</p>
+    <h2>Building History</h2>
+
+    <div class="timeline" style="margin-top: 16px;">
+      <div class="tl-item done">
+        <div class="tl-year">2018</div>
+        <p style="font-size: 12px; font-weight: 600;">Studio Founded</p>
+        <p>Hero Studios begins with a conviction: Minecraft software could be engineered to a higher standard.</p>
+      </div>
+      <div class="tl-item done">
+        <div class="tl-year">2021</div>
+        <p style="font-size: 12px; font-weight: 600;">First Performance Mods</p>
+        <p>HeroSync, Shorts Veinminer, and Pack Merger ship. Latency compensation and pack tooling established.</p>
+      </div>
+      <div class="tl-item done">
+        <div class="tl-year">2024</div>
+        <p style="font-size: 12px; font-weight: 600;">Developer Tools Era</p>
+        <p>Redstone Debugger and CraftPilot redefine what Minecraft developer tools can be.</p>
+      </div>
+      <div class="tl-item now">
+        <div class="tl-year">2026</div>
+        <p style="font-size: 12px; font-weight: 600;">One Ecosystem</p>
+        <p>27 products, unified docs, Hero Client, Hero Play browser hub, and the shared intelligence layer.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">Future</div>
+        <p style="font-size: 12px; font-weight: 600;">Next Generation</p>
+        <p>Hero Launcher, Hero Renderer v3, HeroOS public beta, and the shared AI layer.</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Engineering Principles</h2>
+    <div class="grid-2" style="margin-top: 8px;">
+      <div>
+        <div class="feature-row"><div class="feature-dot"></div><div><h3>Performance First</h3><p>Every tool is engineered around speed and frame budget.</p></div></div>
+        <div class="feature-row"><div class="feature-dot"></div><div><h3>Stability Before Features</h3><p>Stable means CI-built and tested -- never the other way around.</p></div></div>
+        <div class="feature-row"><div class="feature-dot"></div><div><h3>Quality Over Quantity</h3><p>Fewer, deeper, better products.</p></div></div>
+      </div>
+      <div>
+        <div class="feature-row"><div class="feature-dot"></div><div><h3>One Ecosystem</h3><p>Every product is designed to integrate with the others.</p></div></div>
+        <div class="feature-row"><div class="feature-dot"></div><div><h3>Long-Term Maintainability</h3><p>Decisions today serve the next decade.</p></div></div>
+        <div class="feature-row"><div class="feature-dot"></div><div><h3>Vanilla-Friendly</h3><p>Tools that respect the game they extend.</p></div></div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Available for Hire</h2>
+    <div class="card" style="margin-top: 8px;">
+      <div class="grid-2">
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li>Custom Minecraft mod/plugin development</li>
+            <li>Resource pack and theme creation</li>
+            <li>Web application development</li>
+            <li>Build pipeline and CI/CD setup</li>
+            <li>Performance optimization</li>
+            <li>Code review and architecture consulting</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>herostudios.dev</li>
+            <li>Fiverr: exhbbunderscore</li>
+            <li>GitHub: HeroBrokenBrine</li>
+            <li>Discord: discord.gg/5N4pAKRrkk</li>
+          </ul>
+          <div style="margin-top: 12px;">
+            <h3>Rate Card</h3>
+            <p>Small tasks: $50</p>
+            <p>Full projects: $200</p>
+            <p>Retainers: $500+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <span>Hero Studios -- herostudios.dev -- exhbbunderscore on Fiverr</span>
+      <span>Page 2 of 2</span>
+    </div>
+  </div>
+
+</body>
+</html>
