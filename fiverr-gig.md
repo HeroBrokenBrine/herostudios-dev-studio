@@ -4,18 +4,15 @@ Copy EVERYTHING below into Fiverr. Just create your account and paste.
 
 ---
 
-## Step 1: Create Fiverr Account
+## Step 1: Fiverr Account
 
-1. Go to https://www.fiverr.com -> Join (top right)
-2. Sign up with email: ahyaanthepro@gmail.com
-3. Username: herobrokenbrine (or similar)
-4. Complete profile
+You already have one: https://www.fiverr.com/exhbbunderscore
 
-## Step 2: Become a Seller
+## Step 2: Update Seller Profile
 
-1. Click your profile picture -> Become a Seller
-2. Fill in:
-   - Username: herobrokenbrine
+1. Click your profile picture -> Edit Profile
+2. Make sure these are filled in:
+   - Username: exhbbunderscore
    - Description: See PROFILE BIO below
    - Languages: English (Fluent)
    - Skills: Java, JavaScript, TypeScript, Minecraft, Fabric, Forge, Web Development, Python, Rust
