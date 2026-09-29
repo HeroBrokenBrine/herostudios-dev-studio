@@ -1,7 +1,7 @@
-Hey! I'm from Hero Studios (herostudios.dev) â€” we make Minecraft mods, clients, and tools.
+Hey! I'm from Hero Studios (herostudios.dev) - we make Minecraft mods, clients, and tools.
 
 Our ecosystem has 27 products including Hero Client, HeroSync, and Redstone Debugger. We're always looking to connect with the community.
 
-If you're into Minecraft modding or performance, check out our stuff â€” everything's free and open-source under the HBBML license.
+If you're into Minecraft modding or performance, check out our stuff - everything's free and open-source under the HBBML license.
 
 Join our Discord: discord.gg/5N4pAKRrkk
